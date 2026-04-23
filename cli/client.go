@@ -243,6 +243,8 @@ func clientTransport(ctx *cli.Context) http.RoundTripper {
 // to localIP (empty string means no binding, OS picks the source address).
 func clientTransportWithLocalIP(ctx *cli.Context, localIP string) http.RoundTripper {
 	switch {
+	case ctx.Bool("http3"):
+		return clientTransportHTTP3(ctx, localIP)
 	case ctx.Bool("ktls"):
 		return clientTransportKTLS(ctx, localIP)
 	case ctx.Bool("tls"):

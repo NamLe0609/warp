@@ -34,6 +34,7 @@ require (
 	github.com/minio/websocket v1.6.0
 	github.com/muesli/termenv v0.16.0
 	github.com/posener/complete v1.2.3
+	github.com/quic-go/quic-go v0.59.0
 	gitlab.com/go-extension/http v0.0.0-20251006175957-3113a1e48242
 	gitlab.com/go-extension/tls v0.0.0-20251218095625-a161feb36b6b
 	golang.org/x/sync v0.20.0
@@ -304,6 +305,7 @@ require (
 	github.com/quasilyte/gogrep v0.5.0 // indirect
 	github.com/quasilyte/regex/syntax v0.0.0-20210819130434-b3f0c404a727 // indirect
 	github.com/quasilyte/stdinfo v0.0.0-20220114132959-f7386bf02567 // indirect
+	github.com/quic-go/qpack v0.6.0 // indirect
 	github.com/raeperd/recvcheck v0.2.0 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/rjeczalik/notify v0.9.3 // indirect

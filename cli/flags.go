@@ -273,6 +273,11 @@ var ioFlags = []cli.Flag{
 		Hidden: true,
 	},
 	cli.BoolFlag{
+		Name:   "http3",
+		Usage:  "enable HTTP3 support if server supports it",
+		Hidden: true,
+	},
+	cli.BoolFlag{
 		Name:  "stress",
 		Usage: "stress test only and discard output",
 	},
