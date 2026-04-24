@@ -33,10 +33,9 @@ func clientTransportHTTP3(ctx *cli.Context, localIP string) stdHttp.RoundTripper
 
 	// Configure QUIC - similar to http.Transport settings
 	quicConfig := &quic.Config{
-		MaxIdleTimeout:        90 * time.Second,
-		MaxIncomingStreams:    int64(ctx.Int("concurrent")),
-		MaxIncomingUniStreams: -1, // Disable unidirectional streams
-		KeepAlivePeriod:       10 * time.Second,
+		MaxIdleTimeout:     90 * time.Second,
+		MaxIncomingStreams: int64(ctx.Int("concurrent")),
+		KeepAlivePeriod:    10 * time.Second,
 
 		// Buffer sizes - quic-go uses different mechanism than TCP buffers
 		// So set initial stream receive window

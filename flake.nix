@@ -49,6 +49,8 @@
 
               golangci-lint-langserver
               gopls
+              minio-warp
+              gcc
 
               # self.formatter.${system}
             ];
