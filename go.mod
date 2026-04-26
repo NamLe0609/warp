@@ -410,3 +410,5 @@ require (
 	mvdan.cc/gofumpt v0.9.2 // indirect
 	mvdan.cc/unparam v0.0.0-20251027182757-5beb8c8f8f15 // indirect
 )
+
+replace github.com/quic-go/quic-go => github.com/NamLe0609/quic-go v0.0.0-20260426161825-b51bbb709250
